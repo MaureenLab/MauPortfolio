@@ -1,0 +1,548 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maureen Labarinto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+
+    <button class="myBtn" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header id="header">
+      
+      <div class="col-lg-8">
+        <div class="text-center">
+          <div class="container-fluid">
+            <h1><a href="/">Maureen Labarinto</a></h1>
+          </div>
+          <h2>
+            To be part of a company that will help me enhance my knowledge and
+            skills.
+          </h2>
+        </div>
+
+        <nav class="nav navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <div
+              class="collapse navbar-collapse d-flex justify-content-center"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <ul>
+                  <li><a class="nav-link" href="/">Home</a></li>
+                  <li><a class="nav-link" href="#about">About</a></li>
+                  <li><a class="nav-link" href="#resume">Resume</a></li>
+                  <li><a class="nav-link" href="#services">Services</a></li>
+                  <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                  <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="social-links justify-content-center mt-5">
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61555892972865&mibextid=LQQJ4d" class="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/mauie_lbrnto?igsh=M2Zxb3FkYW1jZGxs&utm_source=qr" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="container-fluid mb-5">
+          <img src="{% static 'img/dp6.png' %}" />
+        </div>
+      </div>
+
+      {% comment %}
+      <div class="container">{% block content %} {% endblock %}</div>
+      {% endcomment %}
+    </header>
+
+    <div class="container">
+      <div class="col-md-12">
+        <hr style="height: 5px; background-color: #fff; border: none" noshade />
+      </div>
+    </div>
+
+    {% comment %} About Section {% endcomment %}
+
+    <div id="about" class="contaier bg-dark bg-opacity-50 text-light">
+      {% comment %} About me {% endcomment %}
+      <br />
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Learn more about me</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img
+              src="{% static 'img/dp2.png' %}"
+              style="width: 60%; margin-left: 60px"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>IT Professional &amp; Graphic Designer</h3>
+            <p class="fst-italic">
+              It professional with a strong foundation in software development
+              and graphic desing and confident in my ability to make a positive
+              impact in the industry.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Birthday:</strong> &nbsp&nbsp&nbsp
+                    <span> 03 August, 2002</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Website:</strong> &nbsp&nbsp&nbsp
+                    <span>www.mauportfolio.com</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Phone:</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span>0951110127 </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Address:</strong> &nbsp&nbsp&nbsp
+                    <span>279F J. Gonzales St. San Vicente Biñan Laguna</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Age:</strong>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span>21</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Degree:</strong> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span>Bachelor of Science in Information Technology</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    <span>labmau774@gmail.com </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Freelance:</strong> &nbsp&nbsp&nbsp
+                    <span>Available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Experience working in a company as Sales Clerk and Assistant.
+              Highly analytical, motivated and skilled at solving programming
+              problems. Can work well both independently and in a team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      {% comment %} skills {% endcomment %}
+      <div class="skills container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="55"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    {% comment %} RESUME {% endcomment %}
+    <div id="resume" class="resume contanier bg-dark bg-opacity-55 text-light">
+      <div class="container">
+
+        <br>
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Check My Resume</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Maureen labarinto</h4>
+              <p><em>Innovative and deadline-driven IT professional, Developer, and Graphic Designer with experience in designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <p>
+              <ul>
+                <li>279F J. Gonzales St. San Vicente Biñan Laguna</li>
+                <li>095-111-0127</li>
+                <li>labmau774@gmail.com</li>
+              </ul>
+              </p>
+            </div>
+  
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Scieance &amp; Information technology</h4>
+              <h5>2021 - PRESENT</h5>
+              <p><em>ST. LOUISE ANNE COLLEGES OF SAN PEDRO LAGUNA</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Junior High School &amp; Senior High School</h4>
+              <h5>2014 - 2020</h5>
+              <p><em>UMINGAN CENTRAL NATIONAL HIGHSCHOOL</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Elementary</h4>
+              <h5>2009 - 2014</h5>
+              <p><em>DIKET ELEMENTARY SCHOOL</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>ASSISTANT</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Murallos Dental Clinic</em></p>
+              <p>
+              <ul>
+                <li>Assisted by preparing dental equipments that depends on the type of operation to be performed.</li>
+                <li>Organize patient medical records for better flow of services.</li>
+                <li>Assisted dental patients as a way to express hospitality of the clinic.</li>
+              </ul>
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>SALES CLERK</h4>
+              <h5>2020</h5>
+              <p><em>MACARIA IMPORTED GOODS</em></p>
+              <p>
+              <ul>
+                <li>Advertized products such as perfumes, authentic bags, drinks, chocolates, and beauty products.</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <br>
+
+
+    {% comment %} SERVICES {% endcomment %}
+    <div id="services" class="services contanier bg-dark bg-opacity-50 text-light">
+      <div class="container">
+        <br>
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>My Services</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-lg-5">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Web design</a></h4>
+              <p>Develop and design websites that provides information to the company's clients.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 mb-lg-5">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Graphic design</a></h4>
+              <p>Design, create, provide graphic materials such as elements needed in UI/UX.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 mb-lg-5">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Assistantship</a></h4>
+              <p>Provides assistance in general depends on the job description and contract.</p>
+            </div>
+          </div>
+  
+  
+        </div>
+  
+      </div>
+    </div>
+
+    <br>
+
+    {% comment %} Portfolio {% endcomment %}
+    <div id="portfolio" class="portfolio container bg-dark bg-opacity-55 text-light">
+      <div class="container">
+
+        <br>
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>My Certificates</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="row portfolio-container">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/c1.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Certificate of</p>
+                <h5>Completion</h5>
+                <div class="portfolio-links">
+                  <a href="{% static "img/c1.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">view</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static "img/c2.jpg" %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <p>Certificate of</p>
+                <h5>Appreciation</h5>
+                <div class="portfolio-links">
+                  <a href="{% static "img/c2.jpg" %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3">view</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+  
+        </div>
+  
+      </div>
+    </div>
+
+    <br>
+
+    {% comment %} Contact {% endcomment %}
+    <div id="contact" class="contact contanier bg-dark bg-opacity-50 text-light">
+      <div class="container">
+
+        <br>
+        <br>
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Me</p>
+        </div>
+  
+        <div class="row mt-2">
+  
+          <div class="col-md-6 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>My Address</h3>
+              <p>279F J. Gonzales St. San Vicente Biñan Laguna
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h3>Social Profiles</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61555892972865&mibextid=LQQJ4d" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/mauie_lbrnto?igsh=M2Zxb3FkYW1jZGxs&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Me</h3>
+              <p>labmau774@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Me</h3>
+              <p>095-111-0127
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div
+          class="col-lg-12 mt-1 mt-lg-0 d-flex flex-column align align-items-center"
+        >
+          <a
+            href="mailto:labmau774@gmail.com"
+            class="btn btn-success btn-lg mt-3"
+            >Let's Work Together!</a
+          >
+        </div>
+        
+        
+        <br>
+      </div>
+    </div>
+
+    <br>
+
+    {% comment %} Credits {% endcomment %}
+
+
+    
+      
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+  </body>
+</html>
